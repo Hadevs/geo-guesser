@@ -31,6 +31,10 @@ class MapController: NSObject, Lifecycable {
 		marker.map = mapView
 	}
 	
+	func clearMapView() {
+		mapView?.clear()
+	}
+	
 	func drawPath(firstCoordinate: CLLocationCoordinate2D, secondCoordinate: CLLocationCoordinate2D) {
 		let path = GMSMutablePath()
 		path.add(firstCoordinate)

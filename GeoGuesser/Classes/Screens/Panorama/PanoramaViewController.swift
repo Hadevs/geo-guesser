@@ -51,9 +51,25 @@ class PanoramaViewController: UIViewController {
 		addPanoramaView()
 		addMapViewController()
 		addDownButton()
-		title = "Угадайте локацию"
+		addRightBarButton()
+		setTabBarItem()
+		navigationItem.title = "Угадайте локацию"
 		navigationItem.largeTitleDisplayMode = .always
 		navigationController?.navigationBar.prefersLargeTitles = true
+	}
+	
+	private func setTabBarItem() {
+		let item = UITabBarItem(title: "Игра", image: #imageLiteral(resourceName: "panoramic.png"), tag: 0)
+		self.tabBarItem = item
+	}
+	
+	private func addRightBarButton() {
+		let rightBarButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshButtonClicked))
+		navigationItem.rightBarButtonItem = rightBarButton
+	}
+	
+	@objc private func refreshButtonClicked() {
+		controller?.rightButtonClicked()
 	}
 	
 	private func addDownButton() {
@@ -98,7 +114,7 @@ class PanoramaViewController: UIViewController {
 		
 		view.addSubview(mapViewControllerView)
 		let constraints = NSLayoutConstraint.contraints(withNewVisualFormat: "H:|[mapView]|,V:[panoramaView][mapView]|", dict: ["panoramaView": panoramaView, "mapView": mapViewControllerView])
-		mapControllerHeightConstraint = mapViewControllerView.heightAnchor.constraint(equalToConstant: 100)
+		mapControllerHeightConstraint = mapViewControllerView.heightAnchor.constraint(equalToConstant: minimumMapViewHeight)
 		view.addConstraints(constraints)
 		mapControllerHeightConstraint?.isActive = true
 		mapViewController.didMove(toParent: self)

@@ -23,7 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let panoramaController = PanoramaController(googleService: googleService)
 		let panoramaViewController: PanoramaViewController = PanoramaViewController(controller: panoramaController, mapViewController: mapViewController)
-		rootRouter.root(&window, rootViewController: UINavigationController.init(rootViewController: panoramaViewController))
+		
+		let ncPanoramaViewController = UINavigationController.init(rootViewController: panoramaViewController)
+		let tabBarController = UITabBarController()
+		tabBarController.setViewControllers([ncPanoramaViewController], animated: false)
+		
+		rootRouter.root(&window, rootViewController: tabBarController)
 		
 		return true
 	}
