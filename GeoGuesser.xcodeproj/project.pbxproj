@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E53D72AB145A68E82EE492C /* Pods_GeoGuesserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A2555CF9C8802047360B71 /* Pods_GeoGuesserTests.framework */; };
 		7C62C5E3220FFA91005E08DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C5E2220FFA90005E08DC /* AppDelegate.swift */; };
-		7C62C5E5220FFA91005E08DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C5E4220FFA91005E08DC /* ViewController.swift */; };
 		7C62C5EA220FFA92005E08DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C62C5E9220FFA92005E08DC /* Assets.xcassets */; };
 		7C62C5ED220FFA92005E08DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C62C5EB220FFA92005E08DC /* LaunchScreen.storyboard */; };
 		7C62C5F8220FFA92005E08DC /* GeoGuesserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C5F7220FFA92005E08DC /* GeoGuesserTests.swift */; };
+		7C62C608220FFB2E005E08DC /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C606220FFB2E005E08DC /* PanoramaViewController.swift */; };
+		7CF4B751220FFD08000B2308 /* GoogleMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B750220FFD08000B2308 /* GoogleMapService.swift */; };
+		7CF4B753220FFD3F000B2308 /* GoogleMapServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B752220FFD3F000B2308 /* GoogleMapServiceImplementation.swift */; };
+		7CF4B756220FFE22000B2308 /* PanoramaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B755220FFE22000B2308 /* PanoramaController.swift */; };
+		7CF4B758220FFE8E000B2308 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B757220FFE8E000B2308 /* RootRouter.swift */; };
+		7CF4B75B22100298000B2308 /* Lifecycable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B75A22100298000B2308 /* Lifecycable.swift */; };
+		7CF4B75E22100414000B2308 /* RandomCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B75D22100414000B2308 /* RandomCoordinates.swift */; };
+		7CF4B76022100679000B2308 /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B75F22100679000B2308 /* RandomNumber.swift */; };
+		7CF4B76422100A53000B2308 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B76222100A53000B2308 /* MapViewController.swift */; };
+		7CF4B76522100A53000B2308 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4B76322100A53000B2308 /* MapViewController.xib */; };
+		7CF4B76822100B96000B2308 /* Extensions+DKVK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B76722100B96000B2308 /* Extensions+DKVK.swift */; };
+		7CF4B76A22100D39000B2308 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B76922100D39000B2308 /* MapController.swift */; };
+		7CF4B76C22101423000B2308 /* PlaySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B76B22101423000B2308 /* PlaySession.swift */; };
+		7CF4B76E2210157C000B2308 /* CoordinatesDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B76D2210157C000B2308 /* CoordinatesDistance.swift */; };
+		7CF4B7702210189F000B2308 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4B76F2210189F000B2308 /* Extensions+UIViewController.swift */; };
+		A403890ED3FF986E31F2C5A3 /* Pods_GeoGuesser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2D84F4033B6E6E7DD3167B /* Pods_GeoGuesser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,15 +41,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C7D8462243944D19DC85192 /* Pods-GeoGuesserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoGuesserTests.release.xcconfig"; path = "Target Support Files/Pods-GeoGuesserTests/Pods-GeoGuesserTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F2D84F4033B6E6E7DD3167B /* Pods_GeoGuesser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoGuesser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C62C5DF220FFA90005E08DC /* GeoGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C62C5E2220FFA90005E08DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C62C5E4220FFA91005E08DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C62C5E9220FFA92005E08DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C62C5EC220FFA92005E08DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C62C5EE220FFA92005E08DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C62C5F3220FFA92005E08DC /* GeoGuesserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoGuesserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C62C5F7220FFA92005E08DC /* GeoGuesserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGuesserTests.swift; sourceTree = "<group>"; };
 		7C62C5F9220FFA92005E08DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C62C606220FFB2E005E08DC /* PanoramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
+		7CF4B750220FFD08000B2308 /* GoogleMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapService.swift; sourceTree = "<group>"; };
+		7CF4B752220FFD3F000B2308 /* GoogleMapServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapServiceImplementation.swift; sourceTree = "<group>"; };
+		7CF4B755220FFE22000B2308 /* PanoramaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaController.swift; sourceTree = "<group>"; };
+		7CF4B757220FFE8E000B2308 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		7CF4B75A22100298000B2308 /* Lifecycable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecycable.swift; sourceTree = "<group>"; };
+		7CF4B75D22100414000B2308 /* RandomCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCoordinates.swift; sourceTree = "<group>"; };
+		7CF4B75F22100679000B2308 /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
+		7CF4B76222100A53000B2308 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7CF4B76322100A53000B2308 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		7CF4B76722100B96000B2308 /* Extensions+DKVK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+DKVK.swift"; sourceTree = "<group>"; };
+		7CF4B76922100D39000B2308 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		7CF4B76B22101423000B2308 /* PlaySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySession.swift; sourceTree = "<group>"; };
+		7CF4B76D2210157C000B2308 /* CoordinatesDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesDistance.swift; sourceTree = "<group>"; };
+		7CF4B76F2210189F000B2308 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
+		82A2555CF9C8802047360B71 /* Pods_GeoGuesserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoGuesserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882C1659E6C16CC15E2E18FA /* Pods-GeoGuesserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoGuesserTests.debug.xcconfig"; path = "Target Support Files/Pods-GeoGuesserTests/Pods-GeoGuesserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FAFC2F529D1F7AD863B892C /* Pods-GeoGuesser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoGuesser.debug.xcconfig"; path = "Target Support Files/Pods-GeoGuesser/Pods-GeoGuesser.debug.xcconfig"; sourceTree = "<group>"; };
+		A72F82F34FAD31185DD41A68 /* Pods-GeoGuesser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoGuesser.release.xcconfig"; path = "Target Support Files/Pods-GeoGuesser/Pods-GeoGuesser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A403890ED3FF986E31F2C5A3 /* Pods_GeoGuesser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +85,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E53D72AB145A68E82EE492C /* Pods_GeoGuesserTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055FBF768C4EB7679224A356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F2D84F4033B6E6E7DD3167B /* Pods_GeoGuesser.framework */,
+				82A2555CF9C8802047360B71 /* Pods_GeoGuesserTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C62C5D6220FFA90005E08DC = {
 			isa = PBXGroup;
 			children = (
 				7C62C5E1220FFA90005E08DC /* GeoGuesser */,
 				7C62C5F6220FFA92005E08DC /* GeoGuesserTests */,
 				7C62C5E0220FFA90005E08DC /* Products */,
+				87DDA5D5FDDB8634BCFAA320 /* Pods */,
+				055FBF768C4EB7679224A356 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +124,7 @@
 		7C62C5E1220FFA90005E08DC /* GeoGuesser */ = {
 			isa = PBXGroup;
 			children = (
-				7C62C5E2220FFA90005E08DC /* AppDelegate.swift */,
-				7C62C5E4220FFA91005E08DC /* ViewController.swift */,
+				7C62C602220FFAFB005E08DC /* Classes */,
 				7C62C5E9220FFA92005E08DC /* Assets.xcassets */,
 				7C62C5EB220FFA92005E08DC /* LaunchScreen.storyboard */,
 				7C62C5EE220FFA92005E08DC /* Info.plist */,
@@ -93,6 +141,120 @@
 			path = GeoGuesserTests;
 			sourceTree = "<group>";
 		};
+		7C62C602220FFAFB005E08DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7C62C5E2220FFA90005E08DC /* AppDelegate.swift */,
+				7CF4B76622100B8C000B2308 /* Extensions */,
+				7CF4B75C221003F7000B2308 /* Models */,
+				7CF4B7592210028C000B2308 /* Protocols */,
+				7CF4B754220FFE02000B2308 /* Controllers */,
+				7CF4B74E220FFCF0000B2308 /* Services */,
+				7C62C604220FFB0A005E08DC /* Screens */,
+				7C62C603220FFB04005E08DC /* Routers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7C62C603220FFB04005E08DC /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B757220FFE8E000B2308 /* RootRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		7C62C604220FFB0A005E08DC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B76122100A46000B2308 /* Map */,
+				7C62C605220FFB12005E08DC /* Panorama */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7C62C605220FFB12005E08DC /* Panorama */ = {
+			isa = PBXGroup;
+			children = (
+				7C62C606220FFB2E005E08DC /* PanoramaViewController.swift */,
+			);
+			path = Panorama;
+			sourceTree = "<group>";
+		};
+		7CF4B74E220FFCF0000B2308 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B74F220FFCF6000B2308 /* Google Map */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7CF4B74F220FFCF6000B2308 /* Google Map */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B750220FFD08000B2308 /* GoogleMapService.swift */,
+				7CF4B752220FFD3F000B2308 /* GoogleMapServiceImplementation.swift */,
+			);
+			path = "Google Map";
+			sourceTree = "<group>";
+		};
+		7CF4B754220FFE02000B2308 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B755220FFE22000B2308 /* PanoramaController.swift */,
+				7CF4B76922100D39000B2308 /* MapController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CF4B7592210028C000B2308 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B75A22100298000B2308 /* Lifecycable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7CF4B75C221003F7000B2308 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B75D22100414000B2308 /* RandomCoordinates.swift */,
+				7CF4B76D2210157C000B2308 /* CoordinatesDistance.swift */,
+				7CF4B76B22101423000B2308 /* PlaySession.swift */,
+				7CF4B75F22100679000B2308 /* RandomNumber.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CF4B76122100A46000B2308 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B76222100A53000B2308 /* MapViewController.swift */,
+				7CF4B76322100A53000B2308 /* MapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		7CF4B76622100B8C000B2308 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4B76722100B96000B2308 /* Extensions+DKVK.swift */,
+				7CF4B76F2210189F000B2308 /* Extensions+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87DDA5D5FDDB8634BCFAA320 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FAFC2F529D1F7AD863B892C /* Pods-GeoGuesser.debug.xcconfig */,
+				A72F82F34FAD31185DD41A68 /* Pods-GeoGuesser.release.xcconfig */,
+				882C1659E6C16CC15E2E18FA /* Pods-GeoGuesserTests.debug.xcconfig */,
+				0C7D8462243944D19DC85192 /* Pods-GeoGuesserTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C62C5FC220FFA92005E08DC /* Build configuration list for PBXNativeTarget "GeoGuesser" */;
 			buildPhases = (
+				F1B08BEB7AB95B5960C64D02 /* [CP] Check Pods Manifest.lock */,
 				7C62C5DB220FFA90005E08DC /* Sources */,
 				7C62C5DC220FFA90005E08DC /* Frameworks */,
 				7C62C5DD220FFA90005E08DC /* Resources */,
+				793CAB17C90C38FA9355B929 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C62C5FF220FFA92005E08DC /* Build configuration list for PBXNativeTarget "GeoGuesserTests" */;
 			buildPhases = (
+				0D1357E1E273DEB66ABC0E23 /* [CP] Check Pods Manifest.lock */,
 				7C62C5EF220FFA92005E08DC /* Sources */,
 				7C62C5F0220FFA92005E08DC /* Frameworks */,
 				7C62C5F1220FFA92005E08DC /* Resources */,
@@ -176,6 +341,7 @@
 			files = (
 				7C62C5ED220FFA92005E08DC /* LaunchScreen.storyboard in Resources */,
 				7C62C5EA220FFA92005E08DC /* Assets.xcassets in Resources */,
+				7CF4B76522100A53000B2308 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,13 +354,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D1357E1E273DEB66ABC0E23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoGuesserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793CAB17C90C38FA9355B929 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoGuesser/Pods-GeoGuesser-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoGuesser/Pods-GeoGuesser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B08BEB7AB95B5960C64D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoGuesser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C62C5DB220FFA90005E08DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C62C5E5220FFA91005E08DC /* ViewController.swift in Sources */,
+				7CF4B751220FFD08000B2308 /* GoogleMapService.swift in Sources */,
+				7CF4B753220FFD3F000B2308 /* GoogleMapServiceImplementation.swift in Sources */,
+				7CF4B756220FFE22000B2308 /* PanoramaController.swift in Sources */,
+				7CF4B76422100A53000B2308 /* MapViewController.swift in Sources */,
+				7CF4B76A22100D39000B2308 /* MapController.swift in Sources */,
+				7CF4B76822100B96000B2308 /* Extensions+DKVK.swift in Sources */,
 				7C62C5E3220FFA91005E08DC /* AppDelegate.swift in Sources */,
+				7CF4B758220FFE8E000B2308 /* RootRouter.swift in Sources */,
+				7CF4B75B22100298000B2308 /* Lifecycable.swift in Sources */,
+				7CF4B75E22100414000B2308 /* RandomCoordinates.swift in Sources */,
+				7CF4B76E2210157C000B2308 /* CoordinatesDistance.swift in Sources */,
+				7C62C608220FFB2E005E08DC /* PanoramaViewController.swift in Sources */,
+				7CF4B7702210189F000B2308 /* Extensions+UIViewController.swift in Sources */,
+				7CF4B76C22101423000B2308 /* PlaySession.swift in Sources */,
+				7CF4B76022100679000B2308 /* RandomNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +596,7 @@
 		};
 		7C62C5FD220FFA92005E08DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAFC2F529D1F7AD863B892C /* Pods-GeoGuesser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +614,7 @@
 		};
 		7C62C5FE220FFA92005E08DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72F82F34FAD31185DD41A68 /* Pods-GeoGuesser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +632,7 @@
 		};
 		7C62C600220FFA92005E08DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882C1659E6C16CC15E2E18FA /* Pods-GeoGuesserTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -400,6 +653,7 @@
 		};
 		7C62C601220FFA92005E08DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7D8462243944D19DC85192 /* Pods-GeoGuesserTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
