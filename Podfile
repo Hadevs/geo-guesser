@@ -7,6 +7,8 @@ target 'GeoGuesser' do
   use_frameworks!
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Realm'
+  pod 'RealmSwift'
 
   # Pods for GeoGuesser
 

@@ -54,8 +54,10 @@ class PanoramaViewController: UIViewController {
 		addRightBarButton()
 		setTabBarItem()
 		navigationItem.title = "Угадайте локацию"
-		navigationItem.largeTitleDisplayMode = .always
-		navigationController?.navigationBar.prefersLargeTitles = true
+		if #available(iOS 11.0, *) {
+			navigationItem.largeTitleDisplayMode = .always
+			navigationController?.navigationBar.prefersLargeTitles = true
+		}
 	}
 	
 	private func setTabBarItem() {

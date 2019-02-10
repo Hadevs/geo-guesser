@@ -7,7 +7,20 @@
 		<key>GeoGuesser.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7C62C5DE220FFA90005E08DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C62C5F2220FFA92005E08DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

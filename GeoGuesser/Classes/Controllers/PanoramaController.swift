@@ -11,6 +11,7 @@ import GoogleMaps
 
 class PanoramaController: NSObject, Lifecycable {
 	private weak var googleService: GoogleMapService?
+	private weak var realmInteractor: RealmInteractor?
 	weak var viewController: PanoramaViewController?
 	
 	var panoramaView: GMSPanoramaView? {
@@ -19,8 +20,9 @@ class PanoramaController: NSObject, Lifecycable {
 	
 	private let session: PlaySession = PlaySession()
 	
-	init(googleService: GoogleMapService) {
+	init(googleService: GoogleMapService, realmInteractor: RealmInteractor) {
 		self.googleService = googleService
+		self.realmInteractor = realmInteractor
 	}
 	
 	func viewDidLoad() {
@@ -50,6 +52,18 @@ class PanoramaController: NSObject, Lifecycable {
 		viewController?.hideMapViewController()
 	}
 	
+	private func addAttempToHistory(distance: Double, pickedCoordinates: CLLocationCoordinate2D, rightCoordinates: CLLocationCoordinate2D?) {
+		guard let rightCoordinates = rightCoordinates else {
+			return
+		}
+		
+		let attemp = Attemp(distance: distance,
+												pickedCoordinates: pickedCoordinates,
+												rightCoordinates: rightCoordinates)
+		
+		realmInteractor?.save(object: attemp)
+	}
+	
 	private func observeMapControllerClosures() {
 		let mapController = viewController?.mapViewController?.mapController
 		
@@ -62,13 +76,15 @@ class PanoramaController: NSObject, Lifecycable {
 			if let rightCoordinates = self.session.coordinates, self.session.isSessionActive {
 				mapController?.drawPath(firstCoordinate: coordinates, secondCoordinate: rightCoordinates)
 				mapController?.addMarket(on: coordinates)
+				let result = self.session.pick(point: coordinates)
 				self.session.end()
 				DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-					let result = self.session.pick(point: coordinates)
 					switch result {
 					case .fail(let meters):
+						self.addAttempToHistory(distance: meters, pickedCoordinates: coordinates, rightCoordinates: rightCoordinates)
 						self.viewController?.showAlert(with: "Вы ошиблись :(", and: "Расстояние равно: \(meters) метров.")
 					case .success(let meters):
+						self.addAttempToHistory(distance: meters, pickedCoordinates: coordinates, rightCoordinates: rightCoordinates)
 						self.viewController?.showAlert(with: "Вы угадали!", and: "Расстояние равно: \(meters) метров.")
 					case .error:
 						self.viewController?.showAlert(with: "Упс...", and: "Неизвестная ошибка...")
